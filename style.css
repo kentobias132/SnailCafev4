@@ -71,6 +71,12 @@ html, body{
     border-radius: 19px !important;
     color: #FFFFFF !important;
 }
+i{
+    transition:  .3s linear;
+}
+.btn:hover .fa-arrow-right{
+    transform: translateX(10px);
+}
 
 .top{
     margin-top: 100px;
@@ -265,12 +271,34 @@ font-weight: 500;
 
 .ads .container-fluid{
     padding: 0 !important;
+    position: relative;
 }
 .ads .container-fluid img{
     width: 100%;
-    height: 560px;
+    height: 590px;
 }
-
+.adsText{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 27%;
+    width: 100%;
+    height: 100%;
+}
+.adsText h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.adsText p{
+    font-size: 19px;
+    font-weight: 600;
+}
+.adsText .btn{
+    background: #fff !important;
+    color: var(--redColor) !important;
+    font-size: 14px !important;
+}
 
 /* .ads .container-fluid .advert{
     background: url('img/img2Ori.jpg') no-repeat;
@@ -543,6 +571,18 @@ span,.stars{
     font-size: 9px;
     font-weight: 500;
     }
+    .ads .container-fluid img{
+        height: 470px;
+    }
+    .adsText h2{
+        font-size: 26px;
+    }
+    .adsText p{
+        font-size: 14px;
+    }
+    .adsText .btn{
+        font-size: 13px !important;
+    }
     .store .Gwrapper {
         padding: 0 10px;
         height: 80vh;
@@ -674,7 +714,16 @@ span,.stars{
     }
 
     .ads .container-fluid img{
-        height: 390px;
+        height: 380px;
+    }
+    .adsText h2{
+        font-size: 23px;
+    }
+    .adsText p{
+        font-size: 12px;
+    }
+    .adsText .btn{
+        font-size: 11px !important;
     }
 
     .gallery .row .box{
@@ -766,7 +815,6 @@ span,.stars{
         font-weight: 600;
         margin-bottom: 15px;
         color: #fff ;
-        font-style: italic;
     }
     .main .wrapper .text p{
         font-size: 12px;
@@ -778,7 +826,17 @@ span,.stars{
         margin-top: 60px;
     }
     .ads .container-fluid img{
-        height: 240px;
+        height: 210px;
+    }
+    .adsText h2{
+        font-size: 14px;
+    }
+    .adsText p{
+        font-size: 7px;
+    }
+    .adsText .btn{
+        padding: 2px 15px !important;
+        font-size: 7px !important;
     }
     .ads.top{
         padding: 20px 0 20px;
@@ -900,7 +958,17 @@ span,.stars{
         font-size: 12px !important;
     }
     .ads .container-fluid img{
-        height: 210px;
+        height: 190px;
+    }
+    .adsText h2{
+        font-size: 12px;
+    }
+    .adsText p{
+        font-size: 6px;
+    }
+    .adsText .btn{
+        padding: 1px 15px !important;
+        font-size: 6px !important;
     }
     .main .wrapper .text h2{
         font-size: 20px;
@@ -933,6 +1001,16 @@ span,.stars{
     .review .carousel .bigC .box .text, .heading{
         font-size: 13px;
     }
+    .adsText h2{
+        font-size: 10px;
+    }
+    .adsText p{
+        font-size: 5px;
+        margin-bottom: 1px !important;
+    }
+    .adsText .btn{
+        font-size: 5px !important;
+    }
     .main .wrapper .text{
         padding: 30px 10px 75px 35px;
     }
@@ -942,7 +1020,7 @@ span,.stars{
         margin: 7px;
     }
     .ads .container-fluid img{
-        height: 170px;
+        height: 160px;
     }
     .store .images {
         grid-auto-rows: 100px;

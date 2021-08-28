@@ -141,7 +141,7 @@ i{
     margin: 15px;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: rgba(235, 53, 57, 0.15) 0px 10px 15px -3px, rgba(235, 53, 57, 0.15) 0px 4px 6px -2px;
+    box-shadow: rgba(235, 53, 57, 0.15) 0px 5px 10px -3px;
 }
 .detail .row .box .image{
     position: absolute;
@@ -225,7 +225,7 @@ i{
 } 
 
 /* -----------------specialty styling--------- */
-
+/* rgba(235, 53, 57, 0.15) 0px 2px 6px -2px; */
 .category .row .box{
     padding: 0;
     width: 208px;
@@ -234,7 +234,7 @@ i{
     background: #ffffff;
     border-radius: 15px;
     text-align: center;
-    box-shadow: rgba(235, 53, 57, 0.15) 0px 10px 15px -3px, rgba(235, 53, 57, 0.15) 0px 4px 6px -2px;
+    box-shadow: rgba(235, 53, 57, 0.15) 0px 5px 10px -3px;
     transition: all 0.3s linear;
 }
 
@@ -319,10 +319,10 @@ font-weight: 500;
 .gallery .row .box{
     padding: 0;
     width: 198px;
-    height: 225px;
+    height: 212px;
     margin: 15px;
     border-radius: 15px;
-    box-shadow: rgba(235, 53, 57, 0.15) 0px 10px 15px -3px, rgba(235, 53, 57, 0.15) 0px 4px 6px -2px;
+    box-shadow: rgba(235, 53, 57, 0.15) 0px 5px 10px -3px;
 }
 .gallery .row .text{
     display: grid;
@@ -331,10 +331,7 @@ font-weight: 500;
     grid-column-gap: 5px;
 }
 .gallery .row .text i{
-    justify-self: center;
-    align-self: center;
-    grid-row: span 2;
-    font-size: 40px;
+    font-size: 20px;
     color: var(--redColor);
     cursor: pointer;
 }
@@ -345,24 +342,28 @@ font-weight: 500;
 
 .gallery .row .text h3{
     text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 600;
 }
 .gallery .row .text h4{
     color: var(--redColor);
     justify-items: start;
     margin-right: auto;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600;
 }
 
+.basket{
+    display: inline-block;
+    text-align: center;
+}
 
 .bSpace{
     display: flex;
 }
 
-.bSpace a{
-    margin-left: auto;
+.gallery .bSpace a{
+    margin-left: 83%;
 }
 
 /* --------------------store gallery styling-------- */
@@ -382,6 +383,10 @@ font-weight: 500;
     align-content: center;
     grid-gap: 10px;
 }
+.store .images > div {
+    border-radius: 15px;
+    overflow: hidden;
+}
 .store .images > div img{
     width: 100%;
     height: 100%;
@@ -392,6 +397,9 @@ font-weight: 500;
 }
 .bg4{
     grid-column: 2/4;
+}
+.bSpace a{
+    margin-left: auto;
 }
 /* -----------------------------------reveiw styling----------------------------- */
 
@@ -461,10 +469,12 @@ span,.stars{
     margin-top: 120px;
 }
 .footer .container-fluid{
-    padding: 60px 2px !important;
+    padding: 60px 0 60px !important;
     background-color: var(--redColor);
 }
-
+.two{
+    display: none;
+}
 .foot .iner{
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
@@ -481,6 +491,10 @@ span,.stars{
     font-size: 15px;
     font-weight: 600;
     line-height: 18px;
+    color: #fff;
+}
+.one a{
+    text-decoration: none;
     color: #fff;
 }
 .footer .iner .left{
@@ -622,9 +636,9 @@ span,.stars{
 }
 
 @media (max-width: 780px) {
-    ul .btn{
-        padding: 2px 15px !important;
-        font-size: 10px !important;
+    .navbar .btn{
+        padding: 1px 10px !important;
+        font-size: 8px !important;
     }
     .heading{
         margin: 50px 0;
@@ -733,6 +747,9 @@ span,.stars{
     .gallery .row .text h3{
         font-size: 11px;
     }
+    .gallery .bSpace a{
+        margin-left: 80%;
+    }
     .store .Gwrapper{
         height: 80vh;
     }
@@ -779,7 +796,7 @@ span,.stars{
         display: none;
     }
     .detail .top{
-        margin-top: 100px !important;
+        margin-top: 70px !important;
     }
     html{
         font-size: 55%;
@@ -796,7 +813,7 @@ span,.stars{
     .main .wrapper{
         padding: 70px 0 0;
         height: 70vh;
-        background: linear-gradient(rgba(235, 53, 57, .4), rgba(235, 53, 57, .4)), url('img/bg1.jpg') no-repeat;
+        background: linear-gradient(rgba(235, 53, 57, .4), rgba(235, 53, 57, .4)), url('img/t.jpg') no-repeat;
         background-position: center;
         background-size: cover;
     }
@@ -815,6 +832,9 @@ span,.stars{
         font-weight: 600;
         margin-bottom: 15px;
         color: #fff ;
+    }
+    .store .images > div {
+        border-radius: 8px;
     }
     .main .wrapper .text p{
         font-size: 12px;
@@ -870,6 +890,7 @@ span,.stars{
     .heading{
         font-weight: 600;
         font-size: 18px;
+        margin: 30px 0  40px;
     } 
 
     .owl-dot{
@@ -886,12 +907,16 @@ span,.stars{
         margin: 8px;
     }
     .store .images {
-        grid-auto-rows: 180px;
+        grid-auto-rows: 160px;
         padding: 0 0 10px;
         grid-gap: 5px;
     }
+    .gallery .bSpace a{
+        margin-left: 60%;
+        margin-top: 8px;
+    }
     .store .Gwrapper {
-        height: 80vh;
+        height: 73vh;
     }
     .footer{
         margin-top: 40px;
@@ -902,6 +927,13 @@ span,.stars{
     .foot .iner{
         padding: 20px 60px;
         gap: 40px;
+    }
+    .foot .iner .right{
+        display: flex;
+        gap: 10px;
+    }
+    .two{
+        display: inline;
     }
     .foot .iner .right h1{
         font-size: 30px;
@@ -924,6 +956,7 @@ span,.stars{
         font-size: 14px;
         color: #fff;
     }
+
 }
 
 @media (max-width: 380px) {
@@ -1016,7 +1049,7 @@ span,.stars{
     }
     .gallery .row .box{
         width: 136px;
-        height: 165px;
+        height: 175px;
         margin: 7px;
     }
     .ads .container-fluid img{
@@ -1028,5 +1061,13 @@ span,.stars{
     .category .container-fluid{
         padding: 0 50px !important;
     }
-
+    .foot .iner .right p {
+        font-size: 11px;
+    }
+    .foot .iner .right h1 {
+        font-size: 26px;
+    }
+    .foot .iner {
+        padding: 10px 12px;
+    }
 }
